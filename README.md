@@ -22,6 +22,8 @@ The application runs at `http://localhost:8081` afterwards.
 Windyty basemap
 ---------------
 
+See Windyty map at http://localhost:8081/#/viewer/leaflet/0
+
 Windyty (https://windy.com) integration involves changes to the following files:
 
 * `./index.html` 
@@ -30,7 +32,7 @@ Windyty (https://windy.com) integration involves changes to the following files:
 
 The integration is not very correct in terms of React-Redux, but the design of the windyty API caused some problems.
 
-To toggle on/off set `useWindyty` in `./MapStore2/web/client/components/map/leaflet/Map.jsx`
+To enable/disable set `useWindyty` in `./MapStore2/web/client/components/map/leaflet/Map.jsx`
 
     static defaultProps = {
         //...
@@ -44,4 +46,7 @@ In `Map.jsx` we mount a `<script>` and a css `<link>` tag and then we move the W
 The `./windyty/` directory contains the windyty API static files with some modifications. See http://api.windyty.com/ for reference.
 
 Lots of room for improvement!
+
+
+
 
