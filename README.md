@@ -39,9 +39,9 @@ To toggle on/off set `useWindyty` in ./MapStore2/web/client/components/map/leafl
         useWindyty: true,
     };
 
-In `index.html` we add a <div> for Windyty, and declare two global variables that the API uses during init.
+In `index.html` we add a < div > for Windyty, and declare two global variables that the API uses during init.
 
-In `Map.jsx` we mount a <script> and a css <link> tag and then we move the Windyty <div> to the correct place in the DOM once Windyty has created its Leaflet map.
+In `Map.jsx` we mount a < script > and a css < link > tag and then we move the Windyty <div> to the correct place in the DOM once Windyty has created its Leaflet map.
 
 The `./windyty/` directory contains the windyty API static files with some modifications. See http://api.windyty.com/ for reference.
 
